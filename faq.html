@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | CRYSTAL TAILOR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.faq-item {
+    background: #F9F9F9;
+    padding: 25px;
+    border: 1px solid var(--border-light);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    border-color: var(--gold);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--navy-dark);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.faq-toggle {
+    color: var(--gold);
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-light);
+    color: var(--text-light);
+    line-height: 1.9;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="index.html" class="nav-logo">
+    <img src="img/logo.png" alt="CRYSTAL TAILOR" style="height: 30px;">
+</a>
+    <button class="nav-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links">
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="vision.html">想い</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="concept.html">Concept</a>
+    <a href="price.html">Price</a>
+    <a href="brands.html">Brands</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vision.html">想い</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+</div>
+
+<!-- FAQ SECTION -->
+<section id="faq" style="margin-top: 80px;">
+    <div class="section-inner">
+        <div class="section-title-wrap">
+            <span class="section-label">Frequently Asked Questions</span>
+            <h2>FAQ</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>初めてですが、何を準備したらいいですか？</span>
+                    <span class="faq-toggle">›</span>
+                </div>
+                <div class="faq-answer">
+                    特に準備は必要ありません。ご来店時に、着用シーンやお好みのスタイルをお聞きしながら、一緒に最適なスーツをお作りします。採寸も当店で行いますので、お気軽にご来店ください。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>納期はどのくらいですか？</span>
+                    <span class="faq-toggle">›</span>
+                </div>
+                <div class="faq-answer">
+                    通常、ご注文から3〜4週間での納品となります。急ぎのご依頼や、特殊な仕様の場合は、別途ご相談させていただきます。お気軽にお問い合わせください。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>生地の種類はどのくらいありますか？</span>
+                    <span class="faq-toggle">›</span>
+                </div>
+                <div class="faq-answer">
+                    ゼニア、ロロ・ピアーナ、ドーメル、ダローデール、レダ、カノニコ、尾州など、国内外の最高級生地ブランドから常時300種類以上の生地をご用意しています。季節ごとに新作も入荷いたします。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>修正・調整は可能ですか？</span>
+                    <span class="faq-toggle">›</span>
+                </div>
+                <div class="faq-answer">
+                    もちろん可能です。お渡し後のサイズ調整や修正にも対応いたします。ご着用いただいて、ご不満な点がございましたら、お気軽にお知らせください。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>支払い方法は？</span>
+                    <span class="faq-toggle">›</span>
+                </div>
+                <div class="faq-answer">
+                    現金、クレジットカード、銀行振込に対応しております。詳細はご来店時またはお電話にてお問い合わせください。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>法人向けの販売会は実施していますか？</span>
+                    <span class="faq-toggle">›</span>
+                </div>
+                <div class="faq-answer">
+                    はい、実施しております。従業員様向けのオーダースーツ販売会を承っています。貴社のご都合に合わせて、出張採寸・相談会を実施いたします。また、法人様向けの出張販売会も対応いたします。詳細は<a href="contact.html" style="color: var(--gold);">お問い合わせ</a>をご選択ください。
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 CRYSTAL TAILOR | All Rights Reserved.</p>
+</footer>
+
+<!-- FIXED ACTION BAR -->
+<div class="footer-action-bar">
+    <a href="tel:09027336812">
+        <span class="icon">📞</span>
+        <span>電話予約</span>
+    </a>
+    <a href="https://line.me/R/ti/p/YOUR_LINE_ID" target="_blank">
+        <span class="icon">💬</span>
+        <span>ネット予約</span>
+    </a>
+</div>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+});
+
+// FAQ アコーディオン機能
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
+</script>
+
+</body>
+</html>

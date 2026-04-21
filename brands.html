@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brands | CRYSTAL TAILOR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="img/logo.png" alt="CRYSTAL TAILOR" style="height: 30px;">
+    </a>
+    <button class="nav-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links">
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="vision.html">想い</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="concept.html">Concept</a>
+    <a href="price.html">Price</a>
+    <a href="brands.html">Brands</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vision.html">想い</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+</div>
+
+<!-- BRANDS SECTION -->
+<section id="brands">
+    <div class="section-inner">
+        <div class="section-title-wrap">
+            <span class="section-label">Premium Fabrics</span>
+            <h2>Brands</h2>
+        </div>
+        <div class="brands-list">
+            <div class="brand-card">
+                <h3>Ermenegildo Zegna</h3>
+                <p>イタリアを代表する最高級生地ブランド。しなやかで光沢のある生地は世界中のエグゼクティブから愛されています。</p>
+            </div>
+            <div class="brand-card">
+                <h3>Loro Piana</h3>
+                <p>カシミヤやウールなどの高級天然素材に特化したイタリアのブランド。極上の肌触りと優れた機能性が特徴です。</p>
+            </div>
+            <div class="brand-card">
+                <h3>DORMEUIL</h3>
+                <p>1842年創業のフランスの老舗生地マーチャント。英国の伝統とフランスのエスプリが融合した、革新的な生地を提供しています。</p>
+            </div>
+            <div class="brand-card">
+                <h3>DALLODALE</h3>
+                <p>スコットランドの老舗生地メーカー。伝統的な織り技術と革新的なデザインが融合した、上質なウール生地を提供しています。</p>
+            </div>
+            <div class="brand-card">
+                <h3>REDA</h3>
+                <p>イタリア・ビエラ地方の老舗メーカー。コストパフォーマンスに優れながらも、上質なウール生地を提供しています。</p>
+            </div>
+            <div class="brand-card">
+                <h3>CANONICO</h3>
+                <p>イタリアを代表する生地メーカーの一つ。しなやかで発色の良い生地は、ビジネスシーンからカジュアルまで幅広く対応します。</p>
+            </div>
+            <div class="brand-card">
+                <h3>尾州</h3>
+                <p>愛知県の伝統的な織物産地。日本の気候風土に合わせた、高品質で機能的な生地を開発しています。世界的に高く評価されています。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 CRYSTAL TAILOR | All Rights Reserved.</p>
+</footer>
+
+<!-- FIXED ACTION BAR -->
+<div class="footer-action-bar">
+    <a href="tel:09027336812">
+        <span class="icon">📞</span>
+        <span>電話予約</span>
+    </a>
+    <a href="https://line.me/R/ti/p/YOUR_LINE_ID" target="_blank">
+        <span class="icon">💬</span>
+        <span>ネット予約</span>
+    </a>
+</div>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+});
+</script>
+
+</body>
+</html>

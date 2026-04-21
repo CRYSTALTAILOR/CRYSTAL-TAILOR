@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision | CRYSTAL TAILOR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="index.html" class="nav-logo">
+    <img src="img/logo.png" alt="CRYSTAL TAILOR" style="height: 30px;">
+</a>
+    <button class="nav-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links">
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="vision.html">想い</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="concept.html">Concept</a>
+    <a href="price.html">Price</a>
+    <a href="brands.html">Brands</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vision.html">想い</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+</div>
+
+<!-- VISION SECTION -->
+<section id="vision" style="background: var(--navy-dark); color: var(--white); margin-top: 80px; padding: 120px 40px;">
+    <div class="section-inner">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <span style="color: var(--gold); font-size: 0.75rem; letter-spacing: 0.4em; text-transform: uppercase; display: block; margin-bottom: 30px;">Personal Vision</span>
+            <h2 style="color: var(--white); font-size: 2.2rem; margin-bottom: 50px;">「この人から買いたい」と思っていただける存在へ</h2>
+            
+            <div style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 2.2; font-size: 1rem; color: rgba(255, 255, 255, 0.9);">
+                <p>私は、スーツを「売る」仕事をしているつもりはありません。</p>
+                <p>目指しているのは、<strong>「この人から買いたい」と思っていただける存在になることです。</strong></p>
+                
+                <p style="margin-top: 30px;">お客様一人ひとりには、それぞれ理想や目標があります。その実現のために、自分に何ができるのかを考え、向き合い続けたいと思っています。</p>
+                
+                <p style="margin-top: 20px;">スーツは、あくまでその手段の一つにすぎません。見た目を整えることで自信が生まれ、行動が変わり、結果が変わっていく。そのきっかけをつくる存在でありたいと考えています。</p>
+
+                <p style="margin-top: 30px; color: var(--gold); font-weight: 600;">仕事の何気ない日がCRYSTAL TAILORのスーツを着ることで、背筋が伸び何か特別の日感じることができる。</p>
+                
+                <p style="margin-top: 30px; color: var(--gold); font-weight: 600;">一着のスーツを通して、お客様の理想に少しでも近づくお手伝いができれば、それが何よりの喜びです。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 CRYSTAL TAILOR | All Rights Reserved.</p>
+</footer>
+
+<!-- FIXED ACTION BAR -->
+<div class="footer-action-bar">
+    <a href="tel:09027336812">
+        <span class="icon">📞</span>
+        <span>電話予約</span>
+    </a>
+    <a href="https://line.me/R/ti/p/YOUR_LINE_ID" target="_blank">
+        <span class="icon">💬</span>
+        <span>ネット予約</span>
+    </a>
+</div>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
+
+mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>

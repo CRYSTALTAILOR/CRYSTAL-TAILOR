@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | CRYSTAL TAILOR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="index.html" class="nav-logo">
+    <img src="img/logo.png" alt="CRYSTAL TAILOR" style="height: 30px;">
+</a>
+    <button class="nav-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links">
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="vision.html">想い</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="concept.html">Concept</a>
+    <a href="price.html">Price</a>
+    <a href="brands.html">Brands</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vision.html">想い</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+</div>
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" style="background: var(--white) !important; color: var(--text-dark) !important;">
+    <div class="section-inner">
+        <div class="section-title-wrap">
+            <span class="section-label" style="color: var(--text-dark) !important;">Contact Us</span>
+            <h2 style="color: var(--text-dark) !important;">Contact</h2>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3 style="margin-top: 0; color: var(--text-dark) !important;">まずは、<br>お気軽にご相談を。</h3>
+                <p style="color: var(--text-light); margin-bottom: 40px;">初めてのオーダースーツでも安心してご来店いただけます。どんな些細なご質問でも、丁寧にお答えします。あなたの「こうなりたい」を、一緒に形にしましょう。</p>
+                
+                <div class="contact-item">
+                    <label style="color: var(--text-dark) !important;">CEO / Tailor</label>
+                    <p style="color: var(--text-dark) !important;">濱口 慶 / Kei Hamaguchi</p>
+                </div>
+                <div class="contact-item">
+                    <label style="color: var(--text-dark) !important;">Phone</label>
+                    <p><a href="tel:09027336812" style="color: var(--text-dark); text-decoration: none;">090-2733-6812</a></p>
+                </div>
+                <div class="contact-item">
+                    <label style="color: var(--text-dark) !important;">Email</label>
+                    <p><a href="mailto:1102kei.kai@gmail.com" style="color: var(--text-dark); text-decoration: none;">1102kei.kai@gmail.com</a></p>
+                </div>
+            </div>
+            
+            <div style="background: var(--white); padding: 60px; border: 1px solid var(--border-light);">
+                <h4 style="font-size: 1.2rem; color: var(--text-dark) !important; margin-bottom: 30px; text-align: center;">Reservation</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dark) !important; text-align: center; margin-bottom: 40px;">ご予約・ご相談はこちらから</p>
+                <div class="btn-group">
+                    <a href="https://line.me/ti/p/vTnEPSsrR-" target="_blank" class="btn btn-line">LINEで相談・予約</a>
+                    <a href="https://www.instagram.com/crystalkei__?igsh=MTM4YjhneXk4YTlwcA%3D%3D&utm_source=qr" target="_blank" class="btn btn-instagram">Instagramを見る</a>
+                </div>
+                <p style="margin-top: 40px; font-size: 0.8rem; color: var(--text-dark) !important; text-align: center;">営業時間: 10:00 - 19:00（木曜定休）<br>ご来店の際は、事前にご予約ください。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 CRYSTAL TAILOR | All Rights Reserved.</p>
+</footer>
+
+<!-- FIXED ACTION BAR -->
+<div class="footer-action-bar">
+    <a href="tel:09027336812">
+        <span class="icon">📞</span>
+        <span>電話予約</span>
+    </a>
+    <a href="https://line.me/R/ti/p/YOUR_LINE_ID" target="_blank">
+        <span class="icon">💬</span>
+        <span>ネット予約</span>
+    </a>
+</div>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+});
+</script>
+
+</body>
+</html>

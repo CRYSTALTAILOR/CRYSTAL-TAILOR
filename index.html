@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRYSTAL TAILOR | オーダースーツ専門店</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="img/logo.png" alt="CRYSTAL TAILOR" style="height: 30px;">
+    </a>
+    <button class="nav-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links">
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="vision.html">想い</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="concept.html">Concept</a>
+    <a href="price.html">Price</a>
+    <a href="brands.html">Brands</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="vision.html">想い</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-logo">
+            <img src="img/logo.png" alt="CRYSTAL TAILOR">
+        </div>
+        <p class="hero-sub">オーダースーツ専門店</p>
+        <p class="catchphrase">成果と信頼を生み出す、戦闘服を仕立てる。</p>
+    </div>
+    <div class="hero-scroll">
+        <div class="hero-scroll-line"></div>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 CRYSTAL TAILOR | All Rights Reserved.</p>
+</footer>
+
+<!-- FIXED ACTION BAR -->
+<div class="footer-action-bar">
+    <a href="tel:09027336812">
+        <span class="icon">📞</span>
+        <span>電話予約</span>
+    </a>
+    <a href="https://line.me/R/ti/p/YOUR_LINE_ID" target="_blank">
+        <span class="icon">💬</span>
+        <span>ネット予約</span>
+    </a>
+</div>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+});
+</script>
+
+</body>
+</html>
